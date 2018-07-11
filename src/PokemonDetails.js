@@ -32,10 +32,35 @@ class PokemonDetails extends Component {
         {
           this.state.pokemon.sprites && (
             <img
-              src={this.state.pokemon.sprites.front_default}
+              src={this.state.pokemon.sprites.front_shiny}
               alt={this.state.pokemon.name}
             />
+            
           )
+        }
+        {
+             this.state.pokemon.sprites && (
+            <img
+            src={this.state.pokemon.sprites.front_default}
+            alt={this.state.pokemon.name}
+          />
+        )
+        }
+        {
+             this.state.pokemon.sprites && (
+            <img
+            src={this.state.pokemon.sprites.back_shiny}
+            alt={this.state.pokemon.name}
+          />
+        )
+        }
+        {
+             this.state.pokemon.sprites && (
+            <img
+            src={this.state.pokemon.sprites.back_default}
+            alt={this.state.pokemon.name}
+          />
+        )
         }
       </div>
     )
